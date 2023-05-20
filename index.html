@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>User Management</h1>
+
+  <div class="filter-section">
+    <label for="profession">Filter by Profession:</label>
+    <select id="profession">
+      <option value="">Select Profession</option>
+      <option value="developer">Developer</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button id="filter-btn">Filter</button>
+  </div>
+
+  <div class="add-user-section">
+    <h2>Add a new User</h2>
+    <p>Enter Name     Enter Profession</p>
+    <input type="text" id="name" placeholder="Name">
+    
+    <input type="text" id="profession-input" placeholder="Profession">
+    <input type="text" id="age" placeholder="Age">
+    <button id="add-user-btn">Add User</button>
+  </div>
+
+  <div id="user-list">
+    <!-- User cards will be dynamically added here -->
+  </div>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>
